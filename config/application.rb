@@ -26,7 +26,8 @@ module Microposts
       g.stylesheets false
       g.javascripts false
       g.helper false
-      g.test_framework false
+      g.test_framework false    
+      config.action_view.embed_authenticity_token_in_remote_forms = true
     end
   end
 end
