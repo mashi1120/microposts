@@ -5,6 +5,9 @@
   </h1>
 </section>
 <p>Location: <%= @user.location.present? ? @user.location : "-no-data-" %></p>
-<p><%= link_to "show", @user %> | 
+<% if @user.image? %>
+  <%= image_tag @user.image.thumb.url %>
+<% end %>
+<p><%= link_to "show", @user %> |
 <%= link_to "followings", followings_user_path(@user) %> | 
 <%= link_to "followers", followers_user_path(@user) %></p>
