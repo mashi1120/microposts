@@ -37,6 +37,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
 
 gem 'carrierwave'
+gem 'cloudinary'
 gem 'rmagick'
 
 group :development, :test do
